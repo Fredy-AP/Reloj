@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reloj Fredy Software Inc. Corporation</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronómetro y Reloj Online Gratis</title>
+  <meta name="description" content="Reloj y cronómetro online gratis. Preciso, elegante, con diseño adaptable para usar en computadora o celular.">
+  <meta name="keywords" content="cronómetro online, reloj digital, reloj web, reloj gratis, cronómetro elegante, cronómetro para estudiar">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1081/1081356.png" type="image/png">
+
+  <!-- Google AdSense (reemplaza ca-pub-XXXXXXXXXX con tu ID) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+     crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Reloj Fredy Software Inc. Corporation</h1>
-        <div class="row">
-            <div class="col-md-6 offset-md-3 text-center">
-                <div id="clock" class="display-4"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3 text-center">
-                <img src="" alt="" class="img-fluid">
-            </div>
-        </div>
+  <div class="container mt-5">
+    <h1 class="text-center text-white">Reloj y Cronómetro Online</h1>
+
+    <div class="row mt-4">
+      <div class="col-md-6 offset-md-3 text-center">
+        <div id="clock" class="display-4 text-light bg-dark p-3 rounded shadow"></div>
+      </div>
     </div>
 
-    <script>
-        function updateClock() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
-        }
+    <!-- Espacio para anuncios -->
+    <div class="row mt-4">
+      <div class="col-md-6 offset-md-3 text-center">
+        <!-- Anuncio AdSense -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-XXXXXXXXXX"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+  </div>
 
-        // Actualizar el reloj cada segundo
-        setInterval(updateClock, 1000);
-
-        // Llamar a la función para mostrar la hora actual
-        updateClock();
-    </script>
-<style>
-    body {
-        background-color: lightblue;
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
     }
-        
-</style>
 
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
 
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
